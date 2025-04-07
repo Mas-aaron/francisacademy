@@ -4,6 +4,22 @@ function toggleMenu() {
   navLinks.classList.toggle("active");
 }
 
+// Toggle password visibility
+document.querySelector('.toggle-password').addEventListener('click', function() {
+  const passwordInput = document.getElementById('password');
+  const icon = this.querySelector('i');
+  
+  if (passwordInput.type === 'password') {
+      passwordInput.type = 'text';
+      icon.classList.remove('fa-eye');
+      icon.classList.add('fa-eye-slash');
+  } else {
+      passwordInput.type = 'password';
+      icon.classList.remove('fa-eye-slash');
+      icon.classList.add('fa-eye');
+  }
+});
+
 // Initialize Swiper
 document.addEventListener('DOMContentLoaded', function() {
   const coursesSlider = new Swiper('.courses-slider', {
@@ -103,27 +119,7 @@ const coursesSwiper = new Swiper('.courses-slider', {
     }
   });
 
-// Mobile menu toggle
-function toggleMenu() {
-    const navLinks = document.getElementById("navLinks");
-    navLinks.classList.toggle("active");
-}
 
-// Toggle password visibility
-document.querySelector('.toggle-password').addEventListener('click', function() {
-    const passwordInput = document.getElementById('password');
-    const icon = this.querySelector('i');
-    
-    if (passwordInput.type === 'password') {
-        passwordInput.type = 'text';
-        icon.classList.remove('fa-eye');
-        icon.classList.add('fa-eye-slash');
-    } else {
-        passwordInput.type = 'password';
-        icon.classList.remove('fa-eye-slash');
-        icon.classList.add('fa-eye');
-    }
-});
 
 // Form submission
 document.getElementById('loginForm').addEventListener('submit', function(e) {
