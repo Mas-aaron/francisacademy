@@ -31,8 +31,12 @@
                         <a href="login.html" class="nav-item">Login</a>
                     </div>
                     <div class="search-box">
-                        <i class="fas fa-search"></i>
-                        <input type="text" placeholder="Search courses...">
+                        <div class="search-container">
+                            <input type="text" placeholder="Search courses..." class="search-input">
+                            <button class="search-button">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
                     </div>
                     <div class="mobile-menu" onclick="toggleMenu()">
                         <i class="fas fa-bars"></i>
@@ -243,7 +247,7 @@
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
-
 </body>
 </html>
