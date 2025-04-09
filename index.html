@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
 </head>
@@ -20,12 +22,11 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo">Francis Academy</div>
-                
                 <nav class="navbar">
                     <div class="nav-links" id="navLinks">
-                        <a href="index.html" class="nav-item">Home</a>
-                        <a href="category.html" class="nav-item" >Category</a>
-                        <a href="Kids.html" class="nav-item active">Kids</a>
+                        <a href="index.html" class="nav-item active">Home</a>
+                        <a href="category.html" class="nav-item">Category</a>
+                        <a href="Kids.html" class="nav-item">Kids</a>
                         <a href="blog.html" class="nav-item">Blog</a>
                         <a href="contactus.html" class="nav-item">Contact Us</a>
                         <a href="login.html" class="nav-item">Login</a>
@@ -38,10 +39,14 @@
                             </button>
                         </div>
                     </div>
+                    <div class="mobile-search" onclick="toggleSearch()">
+                        <i class="fas fa-search"></i>
+                    </div>
                     <div class="mobile-menu" onclick="toggleMenu()">
                         <i class="fas fa-bars"></i>
                     </div>
                 </nav>
+
             </div>
         </div>
     </header>
@@ -118,11 +123,11 @@
             <!-- Custom Slider Controls -->
             <div class="swiper-controls">
                 <div class="swiper-button-prev">
-                    <i class="fas fa-chevron-left"></i>
+                  <i class="fas fa-chevron-left"></i>
                 </div>
                 <div class="swiper-pagination"></div>
                 <div class="swiper-button-next">
-                    <i class="fas fa-chevron-right"></i>
+                  <i class="fas fa-chevron-right"></i>
                 </div>
             </div>
           
@@ -434,6 +439,6 @@
     </footer>
 
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <script src="script.js"></script>
+    <script src="script2.js"></script>
 </body>
 </html>

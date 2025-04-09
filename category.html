@@ -17,24 +17,31 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo">Francis Academy</div>
-                
                 <nav class="navbar">
                     <div class="nav-links" id="navLinks">
-                        <a href="index.html" class="nav-item">Home</a>
-                        <a href="category.html" class="nav-item active" >Category</a>
-                        <a href="Kids.html" class="nav-item">Kids</a>
+                        <a href="index.html" class="nav-item ">Home</a>
+                        <a href="category.html" class="nav-item active">Category</a>
+                        <a href="Kids.html" class="nav-item ">Kids</a>
                         <a href="blog.html" class="nav-item">Blog</a>
                         <a href="contactus.html" class="nav-item">Contact Us</a>
                         <a href="login.html" class="nav-item">Login</a>
                     </div>
                     <div class="search-box">
+                        <div class="search-container">
+                            <input type="text" placeholder="Search courses..." class="search-input">
+                            <button class="search-button">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="mobile-search" onclick="toggleSearch()">
                         <i class="fas fa-search"></i>
-                        <input type="text" placeholder="Search courses...">
                     </div>
                     <div class="mobile-menu" onclick="toggleMenu()">
                         <i class="fas fa-bars"></i>
                     </div>
                 </nav>
+
             </div>
         </div>
     </header>
@@ -179,6 +186,6 @@
         </div>
     </footer>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <script src="script.js"></script>
+    <script src="script2.js"></script>
 </body>
 </html>

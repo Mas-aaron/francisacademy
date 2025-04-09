@@ -105,7 +105,7 @@ var heroSwiper = new Swiper(".heroSwiper", {
     });
   });
 
-  // Search Functionality
+  Search Functionality
   const searchInput = document.querySelector('.search-input');
   const searchButton = document.querySelector('.search-button');
   const searchContainer = document.querySelector('.search-container');
@@ -158,6 +158,24 @@ var heroSwiper = new Swiper(".heroSwiper", {
     }
   });
 });
+
+function toggleSearch() {
+  const searchBox = document.querySelector('.search-box');
+  searchBox.classList.toggle('active');
+  
+  // Close menu if open
+  const navLinks = document.getElementById('navLinks');
+  navLinks.classList.remove('active');
+}
+
+function toggleMenu() {
+  const navLinks = document.getElementById('navLinks');
+  navLinks.classList.toggle('active');
+  
+  // Close search if open
+  const searchBox = document.querySelector('.search-box');
+  searchBox.classList.remove('active');
+}
 
 // Sticky Header
 window.addEventListener('scroll', function() {
